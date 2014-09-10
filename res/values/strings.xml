@@ -4,5 +4,10 @@
     <string name="app_name">EpicApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="title">This is the most epic app ever!!!</string>
+    <string name="enter_something_">Enter something...</string>
+    <string name="let_apos_s_try_it_">Let\'s try it :)</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="clear">Clear</string>
+    <string name="more_magic_now_">More magic NOW!!!</string>
 
 </resources>

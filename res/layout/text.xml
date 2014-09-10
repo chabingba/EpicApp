@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:paddingTop="45dp" >
+
+    <EditText
+        android:id="@+id/etCommands"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_something_"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="25dp"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/bRes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:text="@string/let_apos_s_try_it_"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/tPass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:checked="true"
+            android:text="@string/togglebutton" />
+
+        <Button
+            android:id="@+id/bClr"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bMagic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/more_magic_now_" />
+
+    <TextView
+        android:id="@+id/tView"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:text="" />
+
+</LinearLayout>

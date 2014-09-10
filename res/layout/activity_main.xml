@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/bAdd"
         android:layout_centerHorizontal="true"
-        android:text="Don&apos;t try it :)"
+        android:text="Don&apos;t try it :("
         android:textSize="25sp" />
 
 </RelativeLayout>
