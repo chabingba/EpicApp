@@ -5,8 +5,38 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <TextView
+        android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/title"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/disp"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/title_text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bAdd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disp"
+        android:layout_centerHorizontal="true"
+        android:text="Try it :)"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/bSub"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bAdd"
+        android:layout_centerHorizontal="true"
+        android:text="Don&apos;t try it :)"
+        android:textSize="25sp" />
 
 </RelativeLayout>

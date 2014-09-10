@@ -3,5 +3,6 @@
 
     <string name="app_name">EpicApp</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title">This is the most epic app ever!!!</string>
 
 </resources>
