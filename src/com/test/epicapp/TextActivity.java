@@ -26,7 +26,7 @@ public class TextActivity extends Activity implements View.OnClickListener {
 		setContentView(R.layout.text);
 
 		buttonSetView();
-		
+
 		bRes.setOnClickListener(this);
 		bClr.setOnClickListener(this);
 		bMagic.setOnClickListener(this);

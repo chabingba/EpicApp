@@ -44,6 +44,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".RandomShapeActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>
