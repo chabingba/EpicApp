@@ -10,11 +10,10 @@ import android.widget.ListView;
 public class Menu extends ListActivity {
 
 	String classes[] = { "MainActivity", "TextActivity", "RandomShapeActivity",
-			"Email", "NextActivity4" };
+			"Email", "Camera" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 
 		setListAdapter(new ArrayAdapter<String>(Menu.this,
@@ -23,16 +22,15 @@ public class Menu extends ListActivity {
 
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
-		// TODO Auto-generated method stub
 		super.onListItemClick(l, v, position, id);
 		String choice = classes[position];
+		@SuppressWarnings("rawtypes")
 		Class class1;
 		try {
 			class1 = Class.forName("com.test.epicapp." + choice);
 			Intent intent1 = new Intent(Menu.this, class1);
 			startActivity(intent1);
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

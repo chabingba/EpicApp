@@ -3,7 +3,6 @@ package com.test.epicapp;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.InputType;
 import android.view.Gravity;
 import android.view.View;
@@ -21,7 +20,6 @@ public class TextActivity extends Activity implements View.OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.text);
 
@@ -35,7 +33,6 @@ public class TextActivity extends Activity implements View.OnClickListener {
 	}
 
 	private void buttonSetView() {
-		// TODO Auto-generated method stub
 		bRes = (Button) findViewById(R.id.bRes);
 		bClr = (Button) findViewById(R.id.bClr);
 		bMagic = (Button) findViewById(R.id.bMagic);
@@ -46,7 +43,6 @@ public class TextActivity extends Activity implements View.OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.bClr:
 			etCommands.setText(null);
