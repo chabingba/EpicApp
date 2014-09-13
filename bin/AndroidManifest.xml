@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="9"
         android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
 
     <application
         android:allowBackup="true"
@@ -24,7 +25,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="Main app" >
             <intent-filter>
                 <action android:name="com.test.epicapp.MAINACTIVITY" />
 
@@ -33,11 +34,11 @@
         </activity>
         <activity
             android:name=".TextActivity"
-            android:label="@string/app_name" >
+            android:label="Text app" >
         </activity>
         <activity
             android:name=".Menu"
-            android:label="@string/app_name" >
+            android:label="Main menu" >
             <intent-filter>
                 <action android:name="com.test.epicapp.MENU" />
 
@@ -46,15 +47,25 @@
         </activity>
         <activity
             android:name=".RandomShapeActivity"
-            android:label="@string/app_name" >
+            android:label="Random shape" >
         </activity>
         <activity
             android:name=".Email"
-            android:label="@string/app_name" >
+            android:label="E-mail app" >
         </activity>
         <activity
             android:name=".Camera"
-            android:label="@string/app_name" >
+            android:label="Camera app"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name=".Data"
+            android:label="Data" >
+        </activity>
+        <activity
+            android:name=".OpenedClass"
+            android:label="OpenedClass" >
         </activity>
     </application>
 

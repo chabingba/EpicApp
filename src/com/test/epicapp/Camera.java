@@ -1,8 +1,12 @@
 package com.test.epicapp;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,8 +17,8 @@ public class Camera extends Activity implements View.OnClickListener {
 	ImageView ivImage;
 	ImageButton ibCapture;
 	Button bSetBackground;
-	Intent i;
-	int cameraResult=0;
+	Intent i, c;
+	int cameraResult = 0;
 	Bitmap bmp;
 
 	@Override
@@ -23,6 +27,9 @@ public class Camera extends Activity implements View.OnClickListener {
 		setContentView(R.layout.photo);
 
 		init();
+		InputStream is = getResources().openRawResource(R.drawable.logo);
+		bmp = BitmapFactory.decodeStream(is);
+		
 	}
 
 	private void init() {
@@ -35,6 +42,7 @@ public class Camera extends Activity implements View.OnClickListener {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
@@ -43,6 +51,11 @@ public class Camera extends Activity implements View.OnClickListener {
 			startActivityForResult(i, cameraResult);
 			break;
 		case R.id.bSetBackground:
+			try {
+				getApplicationContext().setWallpaper(bmp);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 			break;
 		}
 	}
@@ -50,7 +63,7 @@ public class Camera extends Activity implements View.OnClickListener {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-		if(resultCode == RESULT_OK){
+		if (resultCode == RESULT_OK) {
 			Bundle extras = data.getExtras();
 			bmp = (Bitmap) extras.get("data");
 			ivImage.setImageBitmap(bmp);

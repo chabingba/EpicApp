@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/photo.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/activity_main.xml" />
+        <ignore path="res/layout/get.xml" />
+        <ignore path="res/layout/photo.xml" />
+        <ignore path="res/layout/scroll_view.xml" />
+        <ignore path="res/layout/send.xml" />
+    </issue>
+    <issue id="NestedWeights">
+        <ignore path="res/layout/scroll_view.xml" />
+    </issue>
     <issue id="RtlHardcoded">
+        <ignore path="res/layout/get.xml" />
         <ignore path="src/com/test/epicapp/TextActivity.java" />
+    </issue>
+    <issue id="TextFields">
+        <ignore path="res/layout/get.xml" />
+        <ignore path="res/layout/scroll_view.xml" />
+    </issue>
+    <issue id="TypographyEllipsis">
+        <ignore path="res/values/strings.xml" />
     </issue>
 </lint>
