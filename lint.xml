@@ -4,11 +4,13 @@
         <ignore path="res/layout/photo.xml" />
     </issue>
     <issue id="HardcodedText">
+        <ignore path="res/layout/about.xml" />
         <ignore path="res/layout/activity_main.xml" />
         <ignore path="res/layout/get.xml" />
         <ignore path="res/layout/photo.xml" />
         <ignore path="res/layout/scroll_view.xml" />
         <ignore path="res/layout/send.xml" />
+        <ignore path="res/menu/menu.xml" />
     </issue>
     <issue id="NestedWeights">
         <ignore path="res/layout/scroll_view.xml" />

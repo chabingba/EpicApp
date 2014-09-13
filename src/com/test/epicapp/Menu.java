@@ -3,6 +3,8 @@ package com.test.epicapp;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -11,7 +13,7 @@ public class Menu extends ListActivity {
 
 	String classes[] = { "MainActivity", "TextActivity", "RandomShapeActivity",
 			"Email", "Camera", "Data" };
-
+	Intent iPrefs;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,6 +36,35 @@ public class Menu extends ListActivity {
 			e.printStackTrace();
 		}
 
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(android.view.Menu menu) {
+		// TODO Auto-generated method stub
+		super.onCreateOptionsMenu(menu);
+		MenuInflater menuInflater;
+		menuInflater = getMenuInflater();
+		menuInflater.inflate(R.menu.menu, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.aboutUs:
+			Intent i;
+			i = new Intent("com.test.epicapp.ABOUT");
+			startActivity(i);
+			break;
+		case R.id.pref:
+			iPrefs = new Intent("com.test.epicapp.PREFS"); 
+			startActivity(iPrefs);
+			break;
+		case R.id.exit:
+			finish();
+			break;
+		}
+		return false;
 	}
 
 }

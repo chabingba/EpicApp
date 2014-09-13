@@ -2,7 +2,9 @@ package com.test.epicapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -21,12 +23,19 @@ public class OpenedClass extends Activity implements OnClickListener,
 	String driver1, sendData, a1;
 	Intent i3;
 	int gotf;
+	SharedPreferences getData;
+	String et, values;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.send);
 		init();
+		getData = PreferenceManager
+				.getDefaultSharedPreferences(getBaseContext());
+		et = getData.getString("Name", "I want:");
+		values = getData.getString("List", "4");
+
 		garage = getIntent().getExtras();
 		gotf = garage.getInt("flag");
 		if (gotf == 1) {
@@ -35,6 +44,11 @@ public class OpenedClass extends Activity implements OnClickListener,
 		} else if (gotf == 2) {
 			driver1 = garage.getString("data");
 			tvWish.setText(driver1);
+		}
+		if (driver1.contentEquals("")) {
+			if (values.contentEquals("1")) {
+				tvWish.setText(et);
+			}
 		}
 	}
 
@@ -53,7 +67,7 @@ public class OpenedClass extends Activity implements OnClickListener,
 		case R.id.bReturn:
 			i3 = new Intent();
 			backpack = new Bundle();
-			sendData = a1 +"." + "\n" + sendData;
+			sendData = a1 + "." + "\n" + sendData;
 			backpack.putString("answer", sendData);
 			i3.putExtras(backpack);
 			setResult(RESULT_OK, i3);
