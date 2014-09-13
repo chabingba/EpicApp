@@ -4,6 +4,7 @@
         <ignore path="res/layout/photo.xml" />
     </issue>
     <issue id="HardcodedText">
+        <ignore path="res/layout-land/activity_main.xml" />
         <ignore path="res/layout/about.xml" />
         <ignore path="res/layout/activity_main.xml" />
         <ignore path="res/layout/get.xml" />
