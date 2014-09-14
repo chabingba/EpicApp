@@ -371,11 +371,10 @@ int layout activity_main 0x7f030019
 int layout get 0x7f03001a
 int layout lscreen 0x7f03001b
 int layout photo 0x7f03001c
-int layout random_shape 0x7f03001d
-int layout scroll_view 0x7f03001e
-int layout send 0x7f03001f
-int layout support_simple_spinner_dropdown_item 0x7f030020
-int layout text 0x7f030021
+int layout scroll_view 0x7f03001d
+int layout send 0x7f03001e
+int layout support_simple_spinner_dropdown_item 0x7f03001f
+int layout text 0x7f030020
 int menu menu 0x7f0f0000
 int raw carol_of_bells 0x7f060000
 int string abc_action_bar_home_description 0x7f0c0001
