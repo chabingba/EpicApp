@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/test/epicapp/GraphicsSurface.java" />
+        <ignore path="src/com/test/epicapp/RandomShapeActivity.java" />
+    </issue>
     <issue id="ContentDescription">
         <ignore path="res/layout/photo.xml" />
+    </issue>
+    <issue id="DrawAllocation">
+        <ignore path="src/com/test/epicapp/DrawShape.java" />
+        <ignore path="src/com/test/epicapp/RandomShapeActivity.java" />
     </issue>
     <issue id="HardcodedText">
         <ignore path="res/layout-land/activity_main.xml" />
@@ -26,5 +34,8 @@
     </issue>
     <issue id="TypographyEllipsis">
         <ignore path="res/values/strings.xml" />
+    </issue>
+    <issue id="Wakelock">
+        <ignore path="src/com/test/epicapp/Graphics.java" />
     </issue>
 </lint>

@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingTop="50dp"
     android:weightSum="100" >
 
     <ScrollView
@@ -23,10 +24,10 @@
 
             <EditText
                 android:id="@+id/eTEmail"
-                android:inputType="@+id/textEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10" >
+                android:ems="10"
+                android:inputType="@+id/textEmail" >
 
                 <requestFocus />
             </EditText>
@@ -114,8 +115,7 @@
         <AnalogClock
             android:id="@+id/aClock"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-             />
+            android:layout_height="fill_parent" />
     </LinearLayout>
 
 </LinearLayout>

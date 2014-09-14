@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:paddingTop="50dp" >
 
     <EditText
         android:id="@+id/etSend"
@@ -29,8 +30,8 @@
         android:layout_alignBaseline="@+id/bSA"
         android:layout_alignBottom="@+id/bSA"
         android:layout_toLeftOf="@+id/bSA"
-        android:textSize="17sp"
-        android:text="StartActivityForResult" />
+        android:text="StartActivityForResult"
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/tvGot"
