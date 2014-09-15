@@ -3,21 +3,12 @@ package com.test.epicapp;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class Graphics extends Activity {
-
-	DrawShape ourView;
+public class Slider extends Activity{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-
 		super.onCreate(savedInstanceState);
-		ourView = new DrawShape(this);
-		setContentView(ourView);
-	}
-
-	@Override
-	protected void onPause() {
-		super.onPause();
+		setContentView(R.layout.slide);
 	}
 
 }

@@ -14,7 +14,7 @@ import android.widget.ListView;
 public class Menu extends ListActivity {
 
 	String classes[] = { "MainActivity", "TextActivity", "RandomShapeActivity",
-			"Email", "Camera", "Data", "Graphics", "GraphicsSurface"};
+			"Email", "Camera", "Data", "Graphics", "GraphicsSurface", "Slider"};
 	Intent iPrefs;
 
 	@Override

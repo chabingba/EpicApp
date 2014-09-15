@@ -95,6 +95,10 @@
             android:name=".GraphicsSurface"
             android:label="GraphicsSurface" >
         </activity>
+        <activity
+            android:name=".Slider"
+            android:label="Slider" >
+        </activity>
     </application>
 
 </manifest>

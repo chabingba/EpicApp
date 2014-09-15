@@ -19,6 +19,7 @@
         <ignore path="res/layout/photo.xml" />
         <ignore path="res/layout/scroll_view.xml" />
         <ignore path="res/layout/send.xml" />
+        <ignore path="res/layout/sliding.xml" />
         <ignore path="res/menu/menu.xml" />
     </issue>
     <issue id="NestedWeights">
